@@ -1,16 +1,8 @@
 {
-  "name": "backend",
+  "name": "team-task-manager",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "backend/server.js",
   "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "bcryptjs": "^3.0.3",
-    "cors": "^2.8.5",
-    "dotenv": "^17.4.2",
-    "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.3",
-    "mysql2": "^3.22.3"
+    "start": "node backend/server.js"
   }
 }
