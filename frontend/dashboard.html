@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+  <h2>Team Task Manager</h2>
+
+  <ul>
+    <li class="active">📊 Dashboard</li>
+    <li>📁 Projects</li>
+    <li>✅ Tasks</li>
+    <li>👨‍💻 Team</li>
+    <li>⚙️ Settings</li>
+  </ul>
+
+  <button class="logout-btn" onclick="logout()">
+    Logout
+  </button>
+
+</div>
+
+<div class="main">
+
+  <div class="topbar">
+
+    <input type="text" placeholder="Search tasks...">
+
+    <div class="profile">
+      <img src="https://i.pravatar.cc/40">
+      <span id="username">User</span>
+    </div>
+
+  </div>
+
+  <h1>Dashboard 👋</h1>
+
+  <div class="cards">
+
+    <div class="card blue">
+      <h3>Total Tasks</h3>
+      <p>18</p>
+    </div>
+
+    <div class="card green">
+      <h3>Completed</h3>
+      <p>10</p>
+    </div>
+
+    <div class="card yellow">
+      <h3>Pending</h3>
+      <p>5</p>
+    </div>
+
+    <div class="card red">
+      <h3>In Progress</h3>
+      <p>3</p>
+    </div>
+
+  </div>
+
+  <div class="dashboard-grid">
+
+    <div class="chart-card">
+
+      <h2>Task Analytics</h2>
+
+      <canvas id="taskChart"></canvas>
+
+    </div>
+
+    <div class="recent-card">
+
+      <h2>Recent Tasks</h2>
+
+      <div class="recent-task">
+        <span>Frontend Design</span>
+        <span class="status completed">Completed</span>
+      </div>
+
+      <div class="recent-task">
+        <span>Backend API</span>
+        <span class="status pending">Pending</span>
+      </div>
+
+      <div class="recent-task">
+        <span>Database Setup</span>
+        <span class="status progress">In Progress</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
